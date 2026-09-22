@@ -1,0 +1,17 @@
+语句覆盖率（只统计 quiz 包）：
+
+模块                             覆盖率     总语句     未覆盖
+--------------------------------------------------
+quiz.cli                      100%     168       0
+quiz.errors                   100%      32       0
+quiz.expression               100%     168       0
+quiz.generator                100%     125       0
+quiz.grader                   100%      92       0
+quiz.notation                 100%      76       0
+--------------------------------------------------
+合计                          100.0%     661       0
+
+未覆盖行号（按文件）：
+  （无）
+
+标注源码已写入：C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\docs\coverage
