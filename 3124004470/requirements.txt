@@ -1,0 +1,11 @@
+# 本程序（main.py 与 quiz 包）只使用 Python 3.8+ 标准库：
+# fractions（精确分数）、random、argparse、pathlib、re、unicodedata 等。
+# 不需要安装任何第三方依赖，保留本文件是为了满足作业要求。
+#
+# 运行方式：
+#     python main.py -n 10 -r 10
+#     python main.py -e Exercises.txt -a Answers.txt
+#
+# 下面两项只是"开发期可选工具"，不安装也不影响程序运行与单元测试：
+# coverage>=7.0   # 若希望用 coverage.py 代替标准库 trace 统计覆盖率
+# pytest>=7.0     # 若希望用 pytest 运行 tests/ 下的用例

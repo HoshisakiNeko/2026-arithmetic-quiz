@@ -1,0 +1,22 @@
+# Python 运行时产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 覆盖率工具生成的逐行标注文件（汇总报告保留在 docs/ 下）
+docs/coverage/*.cover
+*.prof
+
+# 程序运行时在项目根目录生成的默认结果文件
+# 注意开头的斜杠：只忽略根目录下的这三个文件，
+# sample_data/ 里的同名样例文件仍然要提交进仓库。
+/Exercises.txt
+/Answers.txt
+/Grade.txt
+
+# 编辑器与系统临时文件
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
