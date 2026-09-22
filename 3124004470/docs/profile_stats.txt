@@ -1,0 +1,46 @@
+题目个数：10000，范围：-r 10
+真实耗时（不带 profiler）：0.470 秒
+带 cProfile 的耗时：2.057 秒（cProfile 会放大耗时，仅用于定位瓶颈）
+
+函数耗时排名：
+         2837668 function calls (2664580 primitive calls) in 2.057 seconds
+
+   Ordered by: cumulative time
+   List reduced from 61 to 14 due to restriction <14>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.005    0.005    2.102    2.102 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\tools\profile_report.py:42(run_generation)
+        1    0.049    0.049    2.097    2.097 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\generator.py:117(generate)
+    12147    0.025    0.000    1.593    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\generator.py:161(_random_expression_with_value)
+74157/12149    0.126    0.000    1.508    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\generator.py:172(_build)
+31027/12821    0.139    0.000    1.489    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\generator.py:199(_build_once)
+    47815    0.068    0.000    0.568    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\notation.py:127(choose)
+    90599    0.163    0.000    0.361    0.000 random.py:284(randrange)
+    11948    0.025    0.000    0.304    0.000 {built-in method _bisect.bisect_right}
+    10000    0.028    0.000    0.300    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\generator.py:70(build)
+    29989    0.031    0.000    0.299    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\expression.py:90(apply_operator)
+    78476    0.138    0.000    0.293    0.000 fractions.py:699(_richcmp)
+    63425    0.044    0.000    0.279    0.000 fractions.py:721(__lt__)
+    29989    0.036    0.000    0.268    0.000 fractions.py:357(forward)
+   121626    0.160    0.000    0.215    0.000 random.py:235(_randbelow_with_getrandbits)
+
+
+         2837668 function calls (2664580 primitive calls) in 2.057 seconds
+
+   Ordered by: internal time
+   List reduced from 61 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    90599    0.163    0.000    0.361    0.000 random.py:284(randrange)
+   121626    0.160    0.000    0.215    0.000 random.py:235(_randbelow_with_getrandbits)
+31027/12821    0.139    0.000    1.489    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\generator.py:199(_build_once)
+    78476    0.138    0.000    0.293    0.000 fractions.py:699(_richcmp)
+74157/12149    0.126    0.000    1.508    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\generator.py:172(_build)
+60761/12147    0.117    0.000    0.144    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\expression.py:156(canonical_key)
+    42130    0.102    0.000    0.149    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\notation.py:37(format_value)
+54260/10000    0.084    0.000    0.206    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\expression.py:134(_render)
+   223488    0.076    0.000    0.137    0.000 {built-in method builtins.isinstance}
+    47815    0.068    0.000    0.568    0.000 C:\Users\htq20\Documents\Codex\2026-09-15\deadline-24-30-24-48-60\arithmetic-quiz\quiz\notation.py:127(choose)
+
+
+

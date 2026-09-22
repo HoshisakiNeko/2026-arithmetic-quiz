@@ -1,0 +1,49 @@
+{
+  "title": "cProfile 累计耗时（生成 10000 道题，总 2.057 秒，CPython 3.11.9）",
+  "total_seconds": 2.057380300000001,
+  "clean_elapsed_seconds": 0.47028860000136774,
+  "count": 10000,
+  "limit": 10,
+  "entries": [
+    {
+      "function": "profile_report.py:42(run_generation)",
+      "cumulative_seconds": 2.1023797
+    },
+    {
+      "function": "generator.py:117(generate)",
+      "cumulative_seconds": 2.0966224
+    },
+    {
+      "function": "generator.py:161(_random_expression_with_value)",
+      "cumulative_seconds": 1.5932632
+    },
+    {
+      "function": "generator.py:172(_build)",
+      "cumulative_seconds": 1.5084478000000001
+    },
+    {
+      "function": "generator.py:199(_build_once)",
+      "cumulative_seconds": 1.4890437
+    },
+    {
+      "function": "notation.py:127(choose)",
+      "cumulative_seconds": 0.5684911
+    },
+    {
+      "function": "generator.py:70(build)",
+      "cumulative_seconds": 0.29970640000000004
+    },
+    {
+      "function": "expression.py:90(apply_operator)",
+      "cumulative_seconds": 0.2989373
+    },
+    {
+      "function": "expression.py:121(to_expression)",
+      "cumulative_seconds": 0.2134802
+    },
+    {
+      "function": "expression.py:134(_render)",
+      "cumulative_seconds": 0.20641540000000003
+    }
+  ]
+}
